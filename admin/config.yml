@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: Drish23-sys/Defrox_website
+  branch: main
+
+media_folder: img
+public_folder: /img
+
+collections:
+  - name: site
+    label: Website content
+    files:
+      - name: events
+        label: Events
+        file: events.json
+        format: json
+        fields:
+          - label: Events
+            name: events
+            widget: list
+            label_singular: event
+            summary: "{{fields.name}} {{fields.date}}"
+            fields:
+              - { label: Title, name: name, widget: string }
+              - label: Type
+                name: type
+                widget: select
+                options: [WORKSHOP, TECH SESSION, BUILD CHALLENGE, HACKATHON, TALK, SEMINAR]
+                default: WORKSHOP
+              - { label: Topic line, name: field, widget: string, required: false, hint: "Short line under the title, e.g. Autonomous systems" }
+              - { label: Photo, name: image, widget: image, required: false }
+              - { label: Date, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false, hint: "Leave empty to show DATE TBA" }
+              - { label: Time, name: time, widget: string, required: false, hint: "e.g. 4:00 PM" }
+              - { label: Venue, name: venue, widget: string, required: false }
+              - { label: Register link, name: register, widget: string, required: false, hint: "Optional. Adds a Register button" }
+              - { label: Description, name: description, widget: text }
+              - { label: Extra details, name: details, widget: string, required: false, hint: "Optional extra line. Leave empty once a date and venue are set" }
+
+      - name: gallery
+        label: Gallery
+        file: gallery.json
+        format: json
+        fields:
+          - { label: Line under the gallery heading, name: note, widget: string, required: false }
+          - label: Photos
+            name: photos
+            widget: list
+            label_singular: photo
+            summary: "{{fields.title}}"
+            hint: "The first photo is shown large. Drag to reorder."
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Tag, name: tag, widget: string, required: false, hint: "Small label on the tile, e.g. WORKSHOP" }
+              - { label: Caption, name: caption, widget: text, required: false }
