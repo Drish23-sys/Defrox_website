@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "name": "Build. Fly. Repeat.",
+      "type": "WORKSHOP",
+      "field": "Autonomous systems",
+      "image": "drone-hero.webp",
+      "date": "",
+      "time": "",
+      "venue": "",
+      "register": "",
+      "description": "Explore the fundamentals of drone engineering, from flight controllers and sensors to building a first autonomous mission. A hands-on session designed for curious minds across every branch.",
+      "details": "Proposed workshop · Beginner friendly · Date and venue to be announced"
+    },
+    {
+      "name": "Decode the signal.",
+      "type": "TECH SESSION",
+      "field": "Communication & security",
+      "image": "circuits.jpg",
+      "date": "",
+      "time": "",
+      "venue": "",
+      "register": "",
+      "description": "Get closer to the invisible systems that connect the world. Explore radio communication, signal processing, and the principles of secure communication through practical demonstrations.",
+      "details": "Proposed tech session · Open to all branches · Date and venue to be announced"
+    },
+    {
+      "name": "Ideas into impact.",
+      "type": "BUILD CHALLENGE",
+      "field": "Defence innovation",
+      "image": "lab.jpg",
+      "date": "",
+      "time": "",
+      "venue": "",
+      "register": "",
+      "description": "Bring a team, choose an engineering problem, and turn an idea into a working concept. Collaborate across disciplines on sensing, robotics, and technology for safer communities.",
+      "details": "Proposed build challenge · Teams welcome · Date and venue to be announced"
+    }
+  ]
+}
